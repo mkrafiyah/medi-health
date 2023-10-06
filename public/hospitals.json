@@ -1,0 +1,43 @@
+[
+    { 
+      "id": "1",
+      "hospital_name": "MediHealth Royal Hospital",
+      "address": "123 Elm Street, Cityville, State",
+      "image": "https://i.ibb.co/QJj6pnP/hospital-1.jpg",
+      "phone_number": "(555) 123-4567",
+      "speciality": "Cardiology"
+    },
+    {
+      "id": "2",
+      "hospital_name": "MediHealth Medical Center",
+      "address": "456 Oak Avenue, Townsville, State",
+      "image": "https://i.ibb.co/DpFWmkZ/hospital-2.jpg",
+      "phone_number": "(555) 987-6543",
+      "speciality": "Orthopedics"
+    },
+    {
+      "id": "3",
+      "hospital_name": "MediHealth Women's Hospital",
+      "address": "789 Maple Drive, Villagetown, State",
+      "image": "https://i.ibb.co/DpFWmkZ/hospital-2.jpg",
+      "phone_number": "(555) 555-5555",
+      "speciality": "Obstetrics and Gynecology"
+    },
+    {
+      "id": "4",
+      "hospital_name": "MediHealth Pediatric Center",
+      "address": "101 Pine Lane, Kidstown, State",
+      "image": "https://i.ibb.co/5WYKgNm/hospital-4.jpg",
+      "phone_number": "(555) 888-9999",
+      "speciality": "Pediatrics"
+    },
+    {
+      "id": "5",
+      "hospital_name": "MediHealth City Clinic",
+      "address": "567 Birch Road, Metropolis, State",
+      "image": "https://i.ibb.co/vmRdx4V/hospital-5.jpg",
+      "phone_number": "(555) 777-3333",
+      "speciality": "Internal Medicine"
+    }
+  ]
+  
