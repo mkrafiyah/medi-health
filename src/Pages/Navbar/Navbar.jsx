@@ -5,7 +5,7 @@ const Navbar = () => {
 
     const navLinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink>About Us</NavLink></li>
+    <li><NavLink to='/about'>About Us</NavLink></li>
     <li><NavLink>Specialists</NavLink></li>
     <li><NavLink to='/hospitals'>Our Hospitals</NavLink></li>
     <li><NavLink>Contact Us</NavLink></li>
