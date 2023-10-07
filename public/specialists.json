@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. Sarah Smith",
+        "specialists": "Cardiologist",
+        "image": "https://i.ibb.co/mGxVH9W/d-1.jpg",
+        "phone": "+1 (555) 123-4567"
+    },
+    {
+        "id": 2,
+        "name": "Dr. John Anderson",
+        "specialists": "Orthopedic Surgeon",
+        "image": "https://i.ibb.co/ydb0vYr/d-2.jpg",
+        "phone": "+1 (555) 987-6543"
+    },
+    {
+        "id": 3,
+        "name": "Dr. Emily Davis",
+        "specialists": "Pediatrician",
+        "image": "https://i.ibb.co/FhC7zGh/d-3.jpg",
+        "phone": "+1 (555) 555-7890"
+    },
+    {
+        "id": 4,
+        "name": "Dr. Michael Johnson",
+        "specialists": "Dermatologist",
+        "image": "https://i.ibb.co/dMdvNF0/d-4.jpg",
+        "phone": "+1 (555) 321-6789"
+    },
+    {
+        "id": 5,
+        "name": "Dr. Lisa White",
+        "specialists": "Dentist",
+        "image": "https://i.ibb.co/ZLZBhrS/d-5.jpg",
+        "phone": "+1 (555) 888-1234"
+    }
+]

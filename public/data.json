@@ -1,0 +1,45 @@
+[
+    {
+        "id": 1,
+        "title": "Oral Cancer Screening",
+        "image": "https://i.ibb.co/dmHQBL4/f-1.jpg",
+        "price": "$15",
+        "description": "Join us at Wellness Extravaganza 2023 for a day of health and well-being. Discover the latest trends in fitness, nutrition, and mental health. Attend engaging workshops, meet experts, and explore a wide range of health products."
+    },
+    {
+        "id": 2,
+        "title": "Nutrition Counselling",
+        "image": "https://i.ibb.co/bHz0qtM/female-nutritionist-giving-consultation-patient-making-diet-plan-weight-loss-clinic-657921-304.jpg",
+        "price": "$10",
+        "description": "The Healthy Living Summit is a one-day event dedicated to promoting a healthier lifestyle. Experience interactive exhibits, cooking demonstrations, and expert talks on fitness, nutrition, and holistic wellness."
+    },
+    {
+        "id": 3,
+        "title": "Blood Sugar Screening",
+        "image": "https://i.ibb.co/s95z3XY/f-3.jpg",
+        "price": "$75",
+        "description": "Escape to a tranquil retreat for a weekend of self-care and mindfulness. Our Mindful Health Retreat offers guided meditation, yoga, and wholesome meals. Recharge your body and mind in a serene natural setting."
+    },
+    {
+        "id": 4,
+        "title": "Massage and Weight Management",
+        "image": "https://i.ibb.co/Pc1djxR/f-6.jpg",
+        "price": "$20",
+        "description": "Unlock the secrets of healthy and delicious cooking at our Nutrition & Cooking Masterclass. Expert chefs will teach you how to prepare nutritious and delectable dishes that promote well-being."
+    },
+    {
+        "id": 5,
+        "title": "Blood Pressure Screening",
+        "image": "https://i.ibb.co/zrkD7X5/f-4.jpg",
+        "price": "Free",
+        "description": "Get ready for a day of fitness fun at the Fitness Challenge Expo. Participate in a variety of fitness challenges, from obstacle courses to dance-offs. This event is free and open to all fitness enthusiasts."
+    },
+    {
+        "id": 6,
+        "title": "Optometrist and Vision Test",
+        "image": "https://i.ibb.co/59VPRfW/f-5.jpg",
+        "price": "$25",
+        "description": "Explore the world of holistic health at our fair. Learn about alternative therapies, herbal remedies, and ancient healing practices. Engage with experts, attend workshops, and discover holistic approaches to well-being."
+    }
+]
+

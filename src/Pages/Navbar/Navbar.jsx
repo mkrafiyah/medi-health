@@ -1,18 +1,24 @@
 import { NavLink } from "react-router-dom";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 const Navbar = () => {
+    useEffect(()=>{
+        Aos.init();
+    },[])
 
     const navLinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
     <li><NavLink to='/about'>About Us</NavLink></li>
-    <li><NavLink>Specialists</NavLink></li>
+    <li><NavLink to='/specialists'>Specialists</NavLink></li>
     <li><NavLink to='/hospitals'>Our Hospitals</NavLink></li>
-    <li><NavLink>Contact Us</NavLink></li>
+    <li><NavLink >Contact Us</NavLink></li>
     </>
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div data-aos='fade-down' className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
