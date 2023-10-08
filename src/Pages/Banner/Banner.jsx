@@ -5,7 +5,7 @@ const Banner = () => {
         <div>
             <div className="carousel w-full h-[500px]">
                 <div id="slide1" className="carousel-item relative w-full">
-                    <img src="../../../public/banner-3.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/HYZdjcN/banner-3.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" className="btn btn-circle">❮</a>
                         <div className="max-w-md text-red-800">
@@ -17,7 +17,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div id="slide2" className="carousel-item relative w-full">
-                    <img src="../../../public/banner-2.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/XVcMWXP/banner-2.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" className="btn btn-circle">❮</a>
                         <div className="max-w-md text-gray-600">
@@ -28,7 +28,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div id="slide3" className="carousel-item relative w-full">
-                    <img src="../../../public/banner-1.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/b7BLjNQ/banner-1.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" className="btn btn-circle">❮</a>
                         <div className="max-w-md text-blue-950">
@@ -39,7 +39,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div id="slide4" className="carousel-item relative w-full">
-                    <img src="../../../public/banner-4.jpg" className="w-full" />
+                    <img src="https://i.ibb.co/8dRZHqj/banner-4.jpg" className="w-full" />
                     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" className="btn btn-circle">❮</a>
                         <div className="max-w-md text-teal-700">

@@ -28,10 +28,50 @@ const Navbar = () => {
     }, [])
 
     const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About Us</NavLink></li>
-        <li><NavLink to='/specialists'>Speakers</NavLink></li>
-        <li><NavLink to='/hospitals'>Our Hospitals</NavLink></li>
+        <li><NavLink to='/'
+        style={({isActive, isPending})=>{
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "maroon" : "black",
+                textDecoration: isActive ? "underline" : "",
+                background: isActive ? "white" : "",
+                fontSize: isPending ? "18px" : "15px"
+            }
+        }} 
+        >Home</NavLink></li>
+        <li><NavLink to='/about'
+         style={({isActive, isPending})=>{
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "maroon" : "black",
+                textDecoration: isActive ? "underline" : "",
+                background: isActive ? "white" : "",
+                fontSize: isPending ? "18px" : "15px"
+            }
+        }} 
+        >About Us</NavLink></li>
+        <li><NavLink to='/specialists'
+         style={({isActive, isPending})=>{
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "maroon" : "black",
+                textDecoration: isActive ? "underline" : "",
+                background: isActive ? "white" : "",
+                fontSize: isPending ? "18px" : "15px"
+            }
+        }} 
+        >Speakers</NavLink></li>
+        <li><NavLink to='/hospitals'
+         style={({isActive, isPending})=>{
+            return {
+                fontWeight: isActive ? "bold" : "",
+                color: isActive ? "maroon" : "black",
+                textDecoration: isActive ? "underline" : "",
+                background: isActive ? "white" : "",
+                fontSize: isPending ? "18px" : "15px"
+            }
+        }} 
+        >Our Hospitals</NavLink></li>
        
     </>
     return (
@@ -47,7 +87,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex gap-0 justify-center items-center">
-                        <img className="w-20" src="../../../public/stethoscope.jpg" alt="" />
+                        <img className="w-20" src="https://i.ibb.co/S02Fz0x/stethoscope.jpg" alt="" />
                         <a className="btn btn-ghost normal-case text-2xl">
                             <p>Medi<span className="text-red-700">Health</span></p>
                         </a>
