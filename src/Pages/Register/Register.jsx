@@ -1,11 +1,16 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Register = () => {
 
     const {createUser} = useContext(AuthContext);
+    const [successRegistration, setSuccessRegistration] = useState('');
+    const [registrationError, setRegistrationError] = useState('');
 
     const handleRegister = e =>{
         e.preventDefault();
@@ -16,11 +21,24 @@ const Register = () => {
         const password = form.get('password');
         console.log(email, password, photo,name)
 
+        setSuccessRegistration('');
+        setRegistrationError('');
+
+        //validation
+
+        if(password.length < 6){
+            setRegistrationError('error')
+            return;
+        }else if(!/^(?=.*[A-Z])(?=.*[!@#$%^&*])/.test(password)){
+            setRegistrationError('error')
+        }
+
         //create user
 
         createUser(email, password)
         .then(result =>{
             console.log(result.user)
+            setSuccessRegistration('successful')
         })
         .catch(err =>{
             console.error(err)
@@ -62,6 +80,13 @@ const Register = () => {
                 <p className="mt-5">Already have an account? Go to<span className="font-bold text-blue-500">Login</span></p>
                 </Link>
             </form>
+            {
+              successRegistration && <p>{toast("Registration Successful")}</p>  
+            }
+            {
+                registrationError && <p>{toast("Registration Failed")}</p>
+            }
+            <ToastContainer />
         </div>
     );
 };
