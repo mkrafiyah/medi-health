@@ -1,17 +1,28 @@
 import { Link, NavLink } from "react-router-dom";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import { useContext, useEffect } from "react";
+import {  useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 
+
+
+
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext);
+    const { user, logOut, auth} = useContext(AuthContext);
+    const [userLoggedOut, setUserLoggedOut] = useState('');
+
     const handleSignOut = () =>{
         logOut()
-        .then()
-        .catch()
+        .then(result=>{
+            console.log(result.user)
+            setUserLoggedOut('logged Out')
+        })
+        .catch(error=>{
+            console.error(error)
+        })
     }
+    
     useEffect(() => {
         Aos.init();
     }, [])
@@ -21,7 +32,7 @@ const Navbar = () => {
         <li><NavLink to='/about'>About Us</NavLink></li>
         <li><NavLink to='/specialists'>Specialists</NavLink></li>
         <li><NavLink to='/hospitals'>Our Hospitals</NavLink></li>
-        <li><NavLink to='/login'>Login</NavLink></li>
+       
     </>
     return (
         <div>
@@ -49,19 +60,26 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
-
-                {
-                    user ?
+                <div>
+            {
+                    user ? <div>
+                        
                         <button onClick={handleSignOut} className="btn">SignOut</button> 
+                    </div>
                         :
                         <Link to='/login'>
                             <div className="navbar-end">
-                                <button className="btn">Login</button>
+                                <button className="py-3 px-5 rounded-md bg-red-800 text-white">Login</button>
                             </div>
                         </Link>
                 }
+                
+            </div>
+
+               
 
             </div>
+           
         </div>
     );
 };

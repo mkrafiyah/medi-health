@@ -31,6 +31,7 @@ const Register = () => {
             return;
         }else if(!/^(?=.*[A-Z])(?=.*[!@#$%^&*])/.test(password)){
             setRegistrationError('error')
+            return;
         }
 
         //create user
