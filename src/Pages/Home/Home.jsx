@@ -14,7 +14,7 @@ const Home = () => {
             
             <Banner></Banner>
             <h2 className="text-3xl text-center mt-10 font-bold">Our <span className="text-red-900">Services</span></h2>
-          <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-4 mx-10 md:mx-5 lg:mx-0">
             
             {
               data.map(services => <Services key={services.id} services={services}></Services>)

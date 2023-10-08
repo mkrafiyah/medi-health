@@ -87,9 +87,9 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="flex gap-0 justify-center items-center">
-                        <img className="w-20" src="https://i.ibb.co/S02Fz0x/stethoscope.jpg" alt="" />
+                        <img className="w-20 mx-5 lg:mx-0" src="https://i.ibb.co/S02Fz0x/stethoscope.jpg" alt="" />
                         <a className="btn btn-ghost normal-case text-2xl">
-                            <p>Medi<span className="text-red-700">Health</span></p>
+                            <p className="-mx-6 lg:-mx-0">Medi<span className="text-red-700">Health</span></p>
                         </a>
                     </div>
 
@@ -104,7 +104,7 @@ const Navbar = () => {
             {
                     user ? <div>
                         
-                        <button onClick={handleSignOut} className="btn">SignOut</button> 
+                        <button onClick={handleSignOut} className="btn mx-14 md:mx-20 lg:mx-0">SignOut</button> 
                     </div>
                         :
                         <Link to='/login'>

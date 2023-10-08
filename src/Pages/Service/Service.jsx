@@ -12,7 +12,7 @@ const Service = () => {
     return (
         <div className="mt-20">
             <div className="card card-side bg-base-100 shadow-xl">
-                <figure><img src={details.image}alt="Movie" /></figure>
+                <figure><img className="w-full" src={details.image}alt="Movie" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{details.title}</h2>
                     <p>{details.description}</p>

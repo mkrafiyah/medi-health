@@ -9,9 +9,9 @@ const Fair = () => {
     return (
         <div>
             <h2 className="text-4xl font-bold mt-20 text-center mb-10"><span className="text-red-900">Health Fair</span> 2023</h2>
-            <div className="flex justify-around ">
+            <div className="grid gap-5 pl-5 md:pl-20 lg:pl-0 lg:flex  lg:justify-around ">
                 <div >
-                    <div data-aos='fade-left' className="card w-96 bg-gray-300 shadow-xl">
+                    <div data-aos='fade-up' className="card w-96 bg-gray-300 shadow-xl">
                         <div className="card-body">
                             <h2 className="card-title">Venue and Date</h2>
                             <p>Venue: City Center,Dhaka</p>
@@ -22,7 +22,7 @@ const Fair = () => {
                     </div>
                 </div>
                 <div >
-                    <div data-aos='fade-right' className="card w-96 bg-gray-300 shadow-xl">
+                    <div data-aos='fade-down' className="card w-96 bg-gray-300 shadow-xl">
                         <div className="card-body">
                             <h2 className="card-title">Activities</h2>
                             <p>Seminar</p>
