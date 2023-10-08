@@ -6,6 +6,9 @@ import About from "../Pages/About/About";
 import Services from "../Pages/Services/Services";
 import Specialists from "../Pages/Specialists/Specialists";
 import Service from "../Pages/Service/Service";
+import Login from "../Pages/Login/Login";
+import Register from "../Pages/Register/Register";
+import ServicePrivate from "../PrivateRoute/ServicePrivate";
 
 const router = createBrowserRouter([
     {
@@ -19,7 +22,7 @@ const router = createBrowserRouter([
         },
         {
             path: 'services/:id',
-            element: <Service></Service>,
+            element: <ServicePrivate><Service></Service></ServicePrivate>,
             loader: ()=> fetch('/data.json')
         },
         {
@@ -28,13 +31,21 @@ const router = createBrowserRouter([
         },
         {
             path: '/about',
-            element: <About></About>
+            element: <ServicePrivate><About></About></ServicePrivate>
         },
         {
             path: '/specialists',
-            element: <Specialists></Specialists>,
+            element: <ServicePrivate> <Specialists></Specialists></ServicePrivate>,
             loader: ()=> fetch('specialists.json')
             
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
+        },
+        {
+          path: '/register',
+          element: <Register></Register>
         }
       ]
     },

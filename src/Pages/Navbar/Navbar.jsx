@@ -1,20 +1,27 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
 
 
 const Navbar = () => {
-    useEffect(()=>{
+    const { user, logOut } = useContext(AuthContext);
+    const handleSignOut = () =>{
+        logOut()
+        .then()
+        .catch()
+    }
+    useEffect(() => {
         Aos.init();
-    },[])
+    }, [])
 
     const navLinks = <>
-    <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/about'>About Us</NavLink></li>
-    <li><NavLink to='/specialists'>Specialists</NavLink></li>
-    <li><NavLink to='/hospitals'>Our Hospitals</NavLink></li>
-    <li><NavLink >Contact Us</NavLink></li>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>About Us</NavLink></li>
+        <li><NavLink to='/specialists'>Specialists</NavLink></li>
+        <li><NavLink to='/hospitals'>Our Hospitals</NavLink></li>
+        <li><NavLink to='/login'>Login</NavLink></li>
     </>
     return (
         <div>
@@ -25,26 +32,35 @@ const Navbar = () => {
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                           {navLinks}
+                            {navLinks}
                         </ul>
                     </div>
                     <div className="flex gap-0 justify-center items-center">
-                    <img className="w-20" src="../../../public/stethoscope.jpg" alt="" />
-                    <a className="btn btn-ghost normal-case text-2xl">
-                       <p>Medi<span className="text-red-700">Health</span></p>
-                    </a>
+                        <img className="w-20" src="../../../public/stethoscope.jpg" alt="" />
+                        <a className="btn btn-ghost normal-case text-2xl">
+                            <p>Medi<span className="text-red-700">Health</span></p>
+                        </a>
                     </div>
-                    
-                    
+
+
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {navLinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Login</a>
-                </div>
+
+                {
+                    user ?
+                        <button onClick={handleSignOut} className="btn">SignOut</button> 
+                        :
+                        <Link to='/login'>
+                            <div className="navbar-end">
+                                <button className="btn">Login</button>
+                            </div>
+                        </Link>
+                }
+
             </div>
         </div>
     );

@@ -7,7 +7,7 @@ const Services = (services) => {
 
     return (
         <div>
-            <div className="card w-[350px] h-[380px] bg-gray-300 shadow-xl">
+            <div className="card w-[350px] h-[380px]  shadow-xl">
                 <figure>
                     <img src={services.services.image} alt="Shoes" className="rounded" />
                 </figure>
@@ -19,7 +19,7 @@ const Services = (services) => {
                     <div className="card-actions flex items-center gap-12">
                     <p className="font-medium">Price: {services.services.price}</p>
                     <Link to={`/services/${services.services.id}`}>
-                    <button  className="btn bg-gray-500 font-bold">Details</button>
+                    <button  className="btn bg-red-800 text-white font-bold">Details</button>
                     </Link>
                        
                     </div>

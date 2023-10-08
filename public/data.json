@@ -1,45 +1,45 @@
 [
     {
         "id": 1,
-        "title": "Oral Cancer Screening",
+        "title": "Health screenings Events",
         "image": "https://i.ibb.co/dmHQBL4/f-1.jpg",
-        "price": "$15",
-        "description": "Join us at Wellness Extravaganza 2023 for a day of health and well-being. Discover the latest trends in fitness, nutrition, and mental health. Attend engaging workshops, meet experts, and explore a wide range of health products."
+        "price": "$20",
+        "description": "Join us at Wellness Extravaganza 2023 for a day of health and well-being. Discover the latest trends in fitness, nutrition, and mental health. Attend engaging workshops, meet experts, and explore a wide range of health products.Health screenings are a great way to provide tangible and important information. At a health fair, you can offer basic screenings like blood pressure, cholesterol, blood sugar, or body fat analysis. This is a perfect opportunity for registered dietitians or registered nurses to explain what these numbers mean and what actions people can take to impact them in the future. "
     },
     {
         "id": 2,
-        "title": "Nutrition Counselling",
+        "title": "Nutrition and cooking demos",
         "image": "https://i.ibb.co/bHz0qtM/female-nutritionist-giving-consultation-patient-making-diet-plan-weight-loss-clinic-657921-304.jpg",
-        "price": "$10",
-        "description": "The Healthy Living Summit is a one-day event dedicated to promoting a healthier lifestyle. Experience interactive exhibits, cooking demonstrations, and expert talks on fitness, nutrition, and holistic wellness."
+        "price": "$40",
+        "description": "The Healthy Living Summit is a one-day event dedicated to promoting a healthier lifestyle. Experience interactive exhibits, cooking demonstrations, and expert talks on fitness, nutrition, and holistic wellness.Giving employees tools and ideas to bring healthier food to work means fewer afternoon burnouts. A virtual demonstration by a nutritionist on easy ways to make healthy snacks and lunches can keep your employees on track."
     },
     {
         "id": 3,
-        "title": "Blood Sugar Screening",
+        "title": "Anti-smoking and diabetes Awareness Event",
         "image": "https://i.ibb.co/s95z3XY/f-3.jpg",
         "price": "$75",
-        "description": "Escape to a tranquil retreat for a weekend of self-care and mindfulness. Our Mindful Health Retreat offers guided meditation, yoga, and wholesome meals. Recharge your body and mind in a serene natural setting."
+        "description": "This measures your blood sugar after an overnight fast (not eating). A fasting blood sugar level of 99 mg/dL or lower is normal, 100 to 125 mg/dL indicates you have prediabetes, and 126 mg/dL or higher indicates you have diabetes." 
     },
     {
         "id": 4,
-        "title": "Massage and Weight Management",
+        "title": "Massage and Weight Management Event",
         "image": "https://i.ibb.co/Pc1djxR/f-6.jpg",
         "price": "$20",
-        "description": "Unlock the secrets of healthy and delicious cooking at our Nutrition & Cooking Masterclass. Expert chefs will teach you how to prepare nutritious and delectable dishes that promote well-being."
+        "description": "Achieving and maintaining a healthy weight includes healthy eating, physical activity, optimal sleep, and stress reduction. Several other factors may also affect weight gain.Healthy eating features a variety of healthy foods. Fad diets may promise fast results, but such diets limit your nutritional intake, can be unhealthy, and tend to fail in the long run.How much physical activity you need depends partly on whether you are trying to maintain your weight or lose weight. Walking is often a good way to add more physical activity to your lifestyle.Managing your weight contributes to good health now and as you age. In contrast, people who have obesity, compared to those with a healthy weight, are at increased risk for many serious diseases and health conditions."
     },
     {
         "id": 5,
-        "title": "Blood Pressure Screening",
+        "title": "Medical Device Marketing",
         "image": "https://i.ibb.co/zrkD7X5/f-4.jpg",
         "price": "Free",
         "description": "Get ready for a day of fitness fun at the Fitness Challenge Expo. Participate in a variety of fitness challenges, from obstacle courses to dance-offs. This event is free and open to all fitness enthusiasts."
     },
     {
         "id": 6,
-        "title": "Optometrist and Vision Test",
+        "title": "Mental Health Awareness Events",
         "image": "https://i.ibb.co/59VPRfW/f-5.jpg",
         "price": "$25",
-        "description": "Explore the world of holistic health at our fair. Learn about alternative therapies, herbal remedies, and ancient healing practices. Engage with experts, attend workshops, and discover holistic approaches to well-being."
+        "description": "No matter where someone works, odds are, there are times they feel overwhelmed. Different professionals can incorporate mindfulness activities into their health fair booths to help people learn to destress or learn mindfulness. For example 1. A dietitian could offer a mindful tasting activity with a raisin or a piece of dark chocolate.2.A yoga instructor could offer a series of simple poses or breathing exercises.3.A therapist could lead a mindful meditation activity.Kate Hamm, a yoga instructor and health coach at AnamBliss, shows us the table she recently created on the benefits of yoga for a corporate health fair. Hamm says, 'i used my computer with a video I created for a pranayama breathing exercise where they followed the size of the circle as it got bigger to inhale or smaller to exhale'.Mandy Enright of The Food and Movement Dietitian created another fun mindfulness set up with her 'De-Stress at Your Desk” station, featuring items like yoga gear and an essential oil diffuser. “In addition to the table, there were chairs set up in front where I showed people how to stretch during the work day and shared meditation exercises.'"
     }
 ]
 
