@@ -3,6 +3,7 @@ import Aos from "aos";
 import 'aos/dist/aos.css'
 import {  useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Providers/AuthProvider";
+import {FaUserDoctor} from "react-icons/fa6";
 
 
 
@@ -113,7 +114,17 @@ const Navbar = () => {
                             </div>
                         </Link>
                 }
+                <div className=" hidden md:flex">
+                {
+                    user ? <span>{user.email}
+                       <p>{user.displayName}</p>
+                        
+                        <img className="w-10 rounded" src={user.photoURL} alt=""/>
+                         <FaUserDoctor className="rounded w-10"></FaUserDoctor>
+                         </span> : ''
+                }
                 
+                </div>
             </div>
 
                

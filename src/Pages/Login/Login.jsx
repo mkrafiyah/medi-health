@@ -18,19 +18,19 @@ const Login = () => {
         const form = new FormData(e.currentTarget)
         const email = form.get("email");
         const password = form.get("password");
-        console.log(email, password)
+        
 
         setSuccessLogin('');
         setErrorLogin('');
 
         signIn(email, password)
         .then(result =>{
-            console.log(result.user)
-            setSuccessLogin('successful')
+            
+            setSuccessLogin('successful', result)
             navigate(location?.state ? location.state : '/')
         })
         .catch(error =>{
-            console.error(error)
+            
             setErrorLogin(error.message);
         })
 

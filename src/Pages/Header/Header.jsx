@@ -32,19 +32,7 @@ const Header = () => {
 
     return (
         <div className="pb-5">
-            <div className="bg-red-100 text-center">
-                
-                {
-                    user ? <span>Email: {user.email}
-                       <p> Name:{user.displayName}</p>
-                        <div className="avatar">
-                    <div className="w-10 rounded">
-                        <img src={user.photoURL} alt="https://i.ibb.co/yVbGVW4/user.png"/>
-                    </div>
-                </div>
-                    </span> : ''
-                }
-            </div>
+          
             <div className="bg-red-100 p-3 w-full flex justify-between items-center">
                 <h4 className="text-lg">Want to Signin With Google??</h4>
                 <div>

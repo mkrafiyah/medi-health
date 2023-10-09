@@ -19,7 +19,7 @@ const Register = () => {
         const email = form.get('email');
         const photo = form.get('photo');
         const password = form.get('password');
-        console.log(email, password, photo,name)
+        
 
         setSuccessRegistration('');
         setRegistrationError('');
@@ -29,7 +29,7 @@ const Register = () => {
         if(password.length < 6){
             setRegistrationError('error')
             return;
-        }else if(!/^(?=.*[A-Z])(?=.*[!@#$%^&*])/.test(password)){
+        }else if(!/^(?=.*[A-Z][$@#%])/.test(password)){
             setRegistrationError('error')
             return;
         }
@@ -38,8 +38,8 @@ const Register = () => {
 
         createUser(email, password)
         .then(result =>{
-            console.log(result.user)
-            setSuccessRegistration('successful')
+           
+            setSuccessRegistration('successful', result.user)
         })
         .catch(err =>{
             console.error(err)

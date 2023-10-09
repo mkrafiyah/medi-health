@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Fair from "../Fair/Fair";
+import Footer from "../Footer/Footer";
 
 
 const Service = () => {
@@ -12,14 +13,16 @@ const Service = () => {
     return (
         <div className="mt-20">
             <div className="card card-side bg-base-100 shadow-xl">
-                <figure><img className="w-full" src={details.image}alt="Movie" /></figure>
-                <div className="card-body">
+                <figure className="w-1/2"><img className="w-full" src={details.image}alt="Movie" /></figure>
+                <div className="card-body w-1/2">
                     <h2 className="card-title">{details.title}</h2>
                     <p>{details.description}</p>
-                     <p>Price: {details.price}</p>
+                     <p className="font-bold">Price: {details.price}</p>
+                     <button className="btn bg-red-100">Buy Now</button>
                 </div>
             </div>
             <Fair></Fair>
+            <Footer></Footer>
         </div>
     );
 };
